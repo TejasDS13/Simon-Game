@@ -27,14 +27,11 @@ function nextSequence() {
 }
 
 function checkAnswer(currentLevel) {
-  console.log("game:", gamePattern);
-console.log("user:", userClickedPattern);
-
   if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
     if (userClickedPattern.length === gamePattern.length) {
-      setTimeout(function () {
-        nextSequence();
-      }, 800);
+    setTimeout(function () {
+  nextSequence();
+   }, 1000);
     }
   } else {
     playSound("wrong");
@@ -79,5 +76,6 @@ function startOver() {
   gamePattern = [];
   started = false;
 }
+
 
 
