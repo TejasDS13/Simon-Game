@@ -52,10 +52,12 @@ $(".btn").click(function () {
 
   playSound(userChosenColour);
 
-  $(this).addClass("pressed");D
-  setTimeout(function () {
-    $(this).removeClass("pressed");
-  }.bind(this), 100);
+var activeButton = this;
+$(activeButton).addClass("pressed");
+
+setTimeout(function () {
+  $(activeButton).removeClass("pressed");
+}, 100);
 
   checkAnswer(userClickedPattern.length - 1);
 });
@@ -74,3 +76,4 @@ function startOver() {
   gamePattern = [];
   started = false;
 }
+
