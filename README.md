@@ -26,9 +26,13 @@ JavaScript (ES6): Controls game states, array-based sequence logic, event listen
 🕹️ How to Play
 
 Press any key on your keyboard to start the game.
+
 Watch the initial color flash and listen to its associated sound.
+
 Click the matching color button to repeat the pattern.If correct, the game adds one more random color to the sequence.
+
 Repeat the full sequence from memory in the exact order it was presented.
+
 A single wrong click triggers a "Game Over" screen, requiring a keypress to reset and try again.
 
 📁 File Structuretext├── sounds/                 # Audio files for color clicks and game-over alerts
@@ -37,4 +41,4 @@ A single wrong click triggers a "Game Over" screen, requiring a keypress to rese
 ├── index.html              # Main HTML entry point
 └── styles.css              # Custom styling and button animation transitions
 
-🚀 Live DemoView 
+🚀 Live DemoView : https://tejasds13.github.io/Simon-Game/
